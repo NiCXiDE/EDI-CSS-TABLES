@@ -7,10 +7,11 @@
     --standard-bg: #329ed5;
     --info: #e2e0e3;
     --info-text: #a3a3a2;
+    --bg: #c2e0eb;
 }
 
 body {
-    background-color: #c2e0eb;
+    background-color: var(--bg);
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -86,6 +87,10 @@ thead > tr, th:last-child {
 tbody > tr > td {
     font-size: xx-large;
     color: var(--info-text);
+    border-top: solid;
+	border-bottom: solid;
+    border-color: var(--bg) ;
+	border-width: 7px;
 }
 tbody > tr:nth-of-type(odd) {
     background-color: var(--info);
@@ -94,7 +99,10 @@ tbody > tr:nth-of-type(even) {
     background-color: #ffffff;
 }
 tbody > tr:nth-child(2) {
-    padding-right: 60px;
+    transform: translateX(-20px);
+}
+tbody > tr:last-child {
+    transform: translateX(20px)
 }
 /*Pies*/
 tfoot {
