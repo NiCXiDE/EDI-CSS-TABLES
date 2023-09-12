@@ -9,26 +9,30 @@
     --info-text: #a3a3a2;
 }
 
-
 body {
     background-color: #c2e0eb;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 /* tabla perse*/
 table {
-    width: 50%;
-    height: 50%;
+    width: 80%;
     justify-content: center;
     border-collapse: collapse;
-    padding: 50px;
-    margin: 50px;
 }
 /*Names*/
+thead {
+    text-shadow: 0px 0px 1px #181818;
+    height: 100px;
+}
 /*Price*/
 thead > tr > th:first-child {
     width: 28%;
+    font-size: x-large;
+    font-weight: 600;
 }
 thead > tr > th {
     font-weight: 400;
@@ -44,6 +48,7 @@ thead > tr > th {
 thead > tr > td {
     font-weight: 400;
     font-size: smaller;
+    height: 40px;
 }
 
 /*PRICE*/
@@ -74,9 +79,8 @@ thead > tr, th:last-child {
     text-transform: lowercase;
     background-color: var(--premium) ;
     border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 15px;;
 }
-
 
 /*Datos*/
 tbody > tr > td {
@@ -89,12 +93,13 @@ tbody > tr:nth-of-type(odd) {
 tbody > tr:nth-of-type(even) {
     background-color: #ffffff;
 }
-
-
-
-
-
+tbody > tr:nth-child(2) {
+    padding-right: 60px;
+}
 /*Pies*/
+tfoot {
+    height: 20px;
+}
 tfoot > tr > td:first-child {
     background-color: var(--price) ;
 }
