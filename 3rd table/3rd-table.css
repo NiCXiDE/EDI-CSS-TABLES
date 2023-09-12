@@ -17,10 +17,12 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    padding: 40px;
+    margin: 10px;
 }
 /* tabla perse*/
 table {
-    width: 80%;
+    width: 50%;
     justify-content: center;
     border-collapse: collapse;
 }
@@ -63,16 +65,16 @@ thead > tr th:nth-child(2) {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-thead > tr td:nth-child(1) {
+thead > tr > td:nth-child(1) {
     background-color: var(--basic) ;
 }
 /*standard*/
-thead > tr th:nth-child(3) {
+thead > tr > th:nth-child(3) {
     background-color: var(--standard-bg) ;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-thead > tr td:nth-child(2) {
+thead > tr > td:nth-child(2) {
     background-color: var(--standard) ;
 }
 /*premium*/
@@ -80,7 +82,11 @@ thead > tr, th:last-child {
     text-transform: lowercase;
     background-color: var(--premium) ;
     border-top-right-radius: 15px;
-    border-top-left-radius: 15px;;
+    border-top-left-radius: 15px;
+}
+
+thead > tr > th:last-child {
+    transform: translateY(-10px);
 }
 
 /*Datos*/
