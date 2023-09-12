@@ -1,6 +1,109 @@
+:root {
+    --price: #f56035;
+    --basic: #fed02a;
+    --standard: #60b8dc ;
+    --premium: #a743f5;
+    --basic-bg: #faaf27;
+    --standard-bg: #329ed5;
+    --info: #e2e0e3;
+    --info-text: #a3a3a2;
+}
+
+
 body {
     background-color: #c2e0eb;
     color: #ffffff;
-    display: flex;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* tabla perse*/
+table {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    border-collapse: collapse;
+    padding: 50px;
+    margin: 50px;
+}
+/*Names*/
+/*Price*/
+thead > tr > th:first-child {
+    width: 28%;
+}
+thead > tr > th {
+    font-weight: 400;
+    font-size: larger;
+    width: 24%;
+}
+
+/*Values*/
+.precio > td {
+    font-weight: 800;
+    font-size: xx-large;
+}
+thead > tr > td {
+    font-weight: 400;
+    font-size: smaller;
+}
+
+/*PRICE*/
+thead > tr th:first-child {
+    text-transform: uppercase;
+    background-color: var(--price) ;
+}
+/*basic*/
+thead > tr th:nth-child(2) {
+    background-color: var(--basic-bg) ;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+thead > tr td:nth-child(1) {
+    background-color: var(--basic) ;
+}
+/*standard*/
+thead > tr th:nth-child(3) {
+    background-color: var(--standard-bg) ;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+thead > tr td:nth-child(2) {
+    background-color: var(--standard) ;
+}
+/*premium*/
+thead > tr, th:last-child {
+    text-transform: lowercase;
+    background-color: var(--premium) ;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+/*Datos*/
+tbody > tr > td {
+    font-size: xx-large;
+    color: var(--info-text);
+}
+tbody > tr:nth-of-type(odd) {
+    background-color: var(--info);
+}
+tbody > tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+
+
+
+
+/*Pies*/
+tfoot > tr > td:first-child {
+    background-color: var(--price) ;
+}
+tfoot > tr > td:nth-child(2) {
+    background-color:var(--basic) ;
+}
+tfoot > tr > td:nth-child(3) {
+    background-color: var(--standard);
+}
+tfoot > tr > td:last-child {
+    background-color: var(--premium);
 }
