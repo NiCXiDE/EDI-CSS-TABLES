@@ -17,7 +17,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 10%;
     margin: 10px;
 }
 /* tabla perse*/
@@ -46,12 +46,16 @@ thead > tr > th {
 /*Values*/
 .precio > td {
     font-weight: 800;
-    font-size: xx-large;
+    font-size: 40px;
 }
 thead > tr > td {
     font-weight: 400;
     font-size: smaller;
     height: 40px;
+}
+
+p {
+    padding: 10px;
 }
 
 /*PRICE*/
@@ -84,7 +88,6 @@ thead > tr, th:last-child {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-
 thead > tr > th:last-child {
     transform: translateY(-10px);
 }
