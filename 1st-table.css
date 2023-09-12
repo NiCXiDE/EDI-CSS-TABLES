@@ -1,0 +1,27 @@
+* {
+    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+body {
+    background-image: url(./misc/1st-table-gradient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+#table {
+    width: 80%;
+    background-color: rgb(40, 190, 160);
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#table tr {
+    margin: 1px;
+    font-weight: 300;
+}
