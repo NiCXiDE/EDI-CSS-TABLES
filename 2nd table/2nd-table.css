@@ -1,0 +1,54 @@
+body {
+    color: #303030;
+    background-color: #161616;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    gap: 27px;
+}
+
+.green {
+    background-color: #27AE61;
+}
+.blue {
+    background-color: #297FB8;
+}
+
+table {
+    background-color: #f1f1f1;
+    width: 75%;
+    height: 30%;
+    border-collapse: collapse;
+}
+
+tr > th {
+    color: #f1f1f1;
+    text-align: left;
+    padding: 5px 0;
+    border-bottom: 2px solid #16161621;
+}
+
+th:first-child {
+    text-align: left;
+    padding-left: 25px;
+    width: 200px;
+}
+
+tbody tr td{
+    text-align: left;
+}
+
+tbody td:first-child{
+    padding: 5px 0;
+    padding-left: 25px;
+    
+}
+
+tbody tr:nth-child(odd){
+    background-color: #FFFFFF;
+}
