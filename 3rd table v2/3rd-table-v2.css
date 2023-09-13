@@ -1,0 +1,94 @@
+* {
+    border: solid black 1px;
+}
+:root {
+    --price: #f56035;
+    --basic: #fed02a;
+    --standard: #60b8dc ;
+    --premium: #a743f5;
+    --basic-bg: #faaf27;
+    --standard-bg: #329ed5;
+    --info: #e2e0e3;
+    --info-text: #a3a3a2;
+    --bg: #c2e0eb;
+}
+
+body {
+    background-color: var(--bg);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+/* tabla perse*/
+table {
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    border-collapse: collapse;
+}
+/*Names*/
+thead {
+    text-shadow: 0px 0px 1px #181818;
+    height: 10vh;
+}
+/*Price*/
+thead > tr:first-child > th:nth-child(2) {
+    width: 10vw;
+    height: 20vh;
+    font-size: x-large;
+    font-weight: 600;
+}
+/*basic-head*/
+thead > tr:first-child > th:nth-child(3) {
+    width: 8vw;
+    height: 4vh;
+}
+/*standard-head*/
+thead > tr:first-child > th:nth-child(4) {
+    width: 8vw;
+    height: 4vh;
+}
+/*premium*/
+thead > tr:first-child > th:nth-child(5) {
+    width: 8vw;
+    height: 4vh;
+}
+
+
+/* COLORES */
+/* Price table*/
+thead > tr:first-child > th:nth-child(2) {
+    text-transform: uppercase;
+    background-color: var(--price);
+}
+/*basic-head*/
+thead > tr:first-child > th:nth-child(3) {
+    text-transform: lowercase;
+    background-color: var(--basic-bg);
+}
+/*basic price*/
+thead > tr:last-child > th:first-child {
+    background-color: var(--basic);
+}
+/*standard-head*/
+thead > tr:first-child > th:nth-child(4) {
+    text-transform: lowercase;
+    background-color: var(--standard-bg);
+}
+/*standard-price*/
+thead > tr:last-child > th:nth-child(2) {
+    background-color: var(--standard);
+}
+/*premium-head*/
+thead > tr:first-child > th:nth-child(5) {
+    background-color: var(--premium);
+}
+/*premium-price*/
+thead > tr:last-child > th:nth-child(3) {
+    background-color: var(--premium);
+}
