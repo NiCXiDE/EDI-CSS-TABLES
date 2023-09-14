@@ -1,3 +1,6 @@
+* {
+    border: dotted black 1px;
+}
 :root {
     --price: #f56035;
     --basic: #fed02a;
@@ -18,6 +21,8 @@ body {
     align-content: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* tabla perse*/
@@ -66,6 +71,8 @@ thead > tr:first-child > th:nth-child(2) {
 thead > tr:first-child > th:nth-child(3) {
     text-transform: lowercase;
     background-color: var(--basic-bg);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 /*basic price*/
 thead > tr:last-child > th:first-child {
@@ -75,6 +82,8 @@ thead > tr:last-child > th:first-child {
 thead > tr:first-child > th:nth-child(4) {
     text-transform: lowercase;
     background-color: var(--standard-bg);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 /*standard-price*/
 thead > tr:last-child > th:nth-child(2) {
@@ -82,8 +91,12 @@ thead > tr:last-child > th:nth-child(2) {
 }
 /*premium-head*/
 thead > tr:first-child > th:nth-child(5) {
+    text-transform: lowercase;
     background-color: var(--premium);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
+
 /*premium-price*/
 thead > tr:last-child > th:nth-child(3) {
     background-color: var(--premium);
