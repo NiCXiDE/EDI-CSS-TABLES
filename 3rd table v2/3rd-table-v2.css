@@ -1,6 +1,3 @@
-* {
-    border: solid black 1px;
-}
 :root {
     --price: #f56035;
     --basic: #fed02a;
@@ -25,8 +22,8 @@ body {
 
 /* tabla perse*/
 table {
-    width: 80vw;
-    height: 100vh;
+    width: 40vw;
+    height: 40vh;
     justify-content: center;
     border-collapse: collapse;
 }
@@ -89,5 +86,74 @@ thead > tr:first-child > th:nth-child(5) {
 }
 /*premium-price*/
 thead > tr:last-child > th:nth-child(3) {
+    background-color: var(--premium);
+}
+
+/*Datos*/
+tbody > tr > td {
+    color: var(--info-text);
+    text-shadow: 0px 0px 1px #181818;
+}
+
+/* filas grises*/
+/* fila 1*/
+tbody > tr:nth-child(2) > td:nth-child(2),
+tbody > tr:nth-child(2) > td:nth-child(3),
+tbody > tr:nth-child(2) > td:nth-child(4),
+tbody > tr:nth-child(2) > td:nth-child(5),
+/* fila 3*/
+tbody > tr:nth-child(6) > td:nth-child(2),
+tbody > tr:nth-child(6) > td:nth-child(3),
+tbody > tr:nth-child(6) > td:nth-child(4),
+tbody > tr:nth-child(6) > td:nth-child(5) {
+    background-color: var(--info);
+}
+
+/* filas blancas*/
+/* fila 2*/
+tbody > tr:nth-child(4) > td:nth-child(1), 
+tbody > tr:nth-child(4) > td:nth-child(2), 
+tbody > tr:nth-child(4) > td:nth-child(3), 
+tbody > tr:nth-child(4) > td:nth-child(4), 
+tbody > tr:nth-child(4) > td:nth-child(5),
+/* fila 4*/
+tbody > tr:nth-child(8) > td:nth-child(2), 
+tbody > tr:nth-child(8) > td:nth-child(3), 
+tbody > tr:nth-child(8) > td:nth-child(4), 
+tbody > tr:nth-child(8) > td:nth-child(5), 
+tbody > tr:nth-child(8) > td:nth-child(6) {
+    background-color: #ffffff;
+}
+tbody > tr:nth-child(1),
+tbody > tr:nth-child(3),
+tbody > tr:nth-child(5),
+tbody > tr:nth-child(7) {
+    background-color: none;
+}
+tbody > tr:nth-of-type(odd) {
+    height: 1vh;
+}
+tbody > tr:nth-of-type(even) {
+    height: 4vh;
+}
+tbody > tr:nth-child(2) > td:nth-child(1),
+tbody > tr:nth-child(8) > td:nth-child(6) {
+    width: 1vw;
+}
+
+/*Pies*/
+tfoot {
+    height: 20px;
+}
+tfoot > tr > td:nth-child(2) {
+    background-color: var(--price) ;
+}
+tfoot > tr > td:nth-child(3) {
+    background-color:var(--basic) ;
+}
+tfoot > tr > td:nth-child(4) {
+    background-color: var(--standard);
+}
+tfoot > tr > td:last-child {
     background-color: var(--premium);
 }
